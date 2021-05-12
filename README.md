@@ -28,4 +28,4 @@ To use: Run a local MySQL server on the port 3306 and have the username set to: 
 This can be changed in the application.properties.
 
 To retrieve all orders go to http://localhost:8080/api/order
-To retrieve a specific order by its id use: http://localhost:8080/api/order/(id number here)
+To retrieve a specific order by its id use: http://localhost:8080/api/order/(id-number-here)
