@@ -6,9 +6,9 @@
 </head>
 <body>
 <h1>Result</h1>
-<p th:text="'apples: ' + ${order.apples}" />
-<p th:text="'oranges: ' + ${order.oranges}" />
-<p th:text="'total: ' + ${order.totalPrice}" />
+<p th:text="'apples ordered: ' + ${order.apples}" />
+<p th:text="'oranges ordered: ' + ${order.oranges}" />
+<p th:text="'total: ' + '£' + ${order.totalPrice}" />
 <a href="/order">Submit another message</a>
 </body>
 </html>

@@ -8,6 +8,22 @@ public class Order {
     private int oranges = 0;
 
     public float getTotalPrice() {
+        if (apples > 1) {
+            if (apples % 2 == 0) {
+                apples = apples/2;
+            } else {
+                apples = ((apples - 1) / 2) + 1;
+            }
+        }
+        if (oranges > 2) {
+            if (oranges % 3 == 0) {
+                oranges = (oranges / 3) * 2;
+            } else if (oranges % 3 == 2) {
+                oranges = ((oranges - 2) / 3) * 2 + 2;
+            } else {
+                oranges = ((oranges - 1) / 3) * 2 + 1;
+            }
+        }
         float total = 0;
         total += apples * 0.6f;
         total += oranges * 0.25f;
